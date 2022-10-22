@@ -86,6 +86,8 @@ public class Assembler {
         machineCode.newLine();
       }
     }
+    machineCode.flush();
+    machineCode.close();
   }
   
 }

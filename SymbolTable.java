@@ -30,7 +30,7 @@ public class SymbolTable {
     symbolMap.put("THIS", Integer.valueOf(3));
     symbolMap.put("THAT", Integer.valueOf(4));
     symbolMap.put("SCREEN", Integer.valueOf(16384));
-    symbolMap.put("KBD", Integer.valueOf(24567));
+    symbolMap.put("KBD", Integer.valueOf(24576));
   }
 
   //adds entry to table

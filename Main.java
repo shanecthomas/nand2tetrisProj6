@@ -24,8 +24,14 @@ public class Main {
     File destFile = new File(outFileName);
 
     try {
+      if (destFile.exists()) {
+        destFile.delete();
+      }
+      destFile.createNewFile();
+      
       Assembler assembler = new Assembler(srcFile, destFile);
       assembler.parse();
+      System.out.println(destFile + " has been created!");
     }
 
     catch (IOException e) {
